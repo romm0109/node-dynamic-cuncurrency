@@ -1,0 +1,25 @@
+{
+  "name": "adaptive-concurrency",
+  "version": "1.0.0",
+  "description": "Adaptive concurrency control for async work with per-downstream factory pools, queue timeouts, error classification, and observability",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "node --experimental-strip-types --test tests/**/*.test.ts",
+    "lint": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}
